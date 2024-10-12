@@ -1,0 +1,1 @@
+cvlc v4l2:///dev/video0 --sout '#transcode{vcodec=h264,acodec=none}:rtp{sdp=rtsp://:8554/stream}' --no-sout-audio

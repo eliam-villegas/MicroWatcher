@@ -1,0 +1,19 @@
+# config/config.yaml
+
+# Configuración de la cámara
+camera:
+  # Para usar la cámara web, establece 'url' en 0
+  url: "rtsp://192.168.50.120:8554/stream"
+  width: 640
+  height: 480
+
+# Configuración de la base de datos
+database:
+  uri: 'mongodb+srv://eliamvillegas:eliamvillegas@microwatchercluster.g1unp.mongodb.net/?retryWrites=true&w=majority&appName=MicroWatcherCluster'
+  dbname: "MicroWatcherCluster"
+  collection: "detections"
+
+# Configuración del modelo
+model:
+  path: "C:/Users/eliam/PycharmProjects/MicroWatcher/models/best.pt"   # Ruta al modelo de detección
+  confidence_threshold: 0.4    # Umbral de confianza para detecciones
